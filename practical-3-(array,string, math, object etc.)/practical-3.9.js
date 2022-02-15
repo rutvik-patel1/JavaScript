@@ -16,5 +16,6 @@ for(let obj in jsonData) {
     fullNames.push(jsonData[obj].fullName)
 }
 
-
-console.log(fullNames);
+const result = (string,array) => {
+    requiredArray = []
+}
