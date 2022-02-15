@@ -44,7 +44,7 @@ const newList = [...patients ,{
     "ailments": ["Fatigue", "Cold", "Fever"]
     }]
 
-//console.log("1.New Object after append operation:-",newList)
+console.log("1.New Object after append operation:-",newList)
 
 const index = newList.findIndex((item)=>{
     const index = item.name=="George"
@@ -52,14 +52,14 @@ const index = newList.findIndex((item)=>{
 })
 
 newList.splice(index,1)
-//console.log("2.Object after delete George entry :-",newList)
+console.log("2.Object after delete George entry :-",newList)
 
 const addVal = newList.unshift({
     "name": "Rutvik",
     "ailments": ["Blood Pressure"]
     })
 
-//console.log("3.Object after one value added at the beginning :-",newList)
+console.log("3.Object after one value added at the beginning :-",newList)
 
 const changeAilments = newList.forEach((item)=>{
     if(item.name=="Christopher"){
@@ -67,25 +67,22 @@ const changeAilments = newList.forEach((item)=>{
     }    
 })
 
-//console.log("4.Chage value of ailments of Christopher :-",newList)
+console.log("4.Chage value of ailments of Christopher :-",newList)
 
 newList.pop()
-//console.log("5",newList)
+console.log("5.Delete one patient from the end of the array:-",newList)
 newList.shift()
-//console.log("6",newList)
-newList.splice(4,0,{
-    "name": "John",
-    "ailments": ["Cough", "Cold", "Fever"]
-    },)
+console.log("6.Delete one patient from the beginning of the array.:-",newList)
+newList.splice(4,0,{"name": "John","ailments": ["Cough", "Cold", "Fever"]})
 
-//console.log("7",newList)
+console.log("7. Insert one patient somewhere within the array at index 4:-",newList)
 
 const diabetesPatients = newList.find(obj =>{
     return obj.ailments.includes('Diabetes')
 
 })
 
-//console.log("8",diabetesPatients)
+console.log("8. Using the find method, find the patients having Diabetes:-",diabetesPatients)
 
 newList.reverse()
-console.log("9",newList)
+console.log("9. Reverse the order of all the array objects:-",newList)
