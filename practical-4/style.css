@@ -1,0 +1,39 @@
+html{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(2, 177, 177);
+}
+
+.heading{
+    text-align: center;
+}
+
+input{
+    margin: 5px;
+    align-items:center center;
+}
+.input-group{
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.radio-group{
+    display: inline-flex;
+    align-items: center;
+} 
+
+.details{
+    overflow:scroll ;
+    
+}
+
+td,th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+  }
+  
+#form-table {
+    text-align: center;
+}
+ 
