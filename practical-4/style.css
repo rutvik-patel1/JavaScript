@@ -37,3 +37,6 @@ td,th {
     text-align: center;
 }
  
+#error{
+    color:#bd0000;
+}
