@@ -35,7 +35,9 @@ particular technology in number of years, careerStartDate and save button.-->
             <input type="text" name="firstName" value="Rutvik" id="firstName" placeholder="Firstname" required>
             <input type="text" name="middleName"  value="V" id="middleName" placeholder="Middlename">
             <input type="text" name="lastName" value="Patel" id="lastName" placeholder="lastName" required>
-        </div></td>
+        </div>
+        <p id="error"></p>
+        </td>
     </tr>
     <tr>
         <td><p>Gender:</p></td>
@@ -247,8 +249,18 @@ function getData(form){
     var middleName = document.getElementById("middleName").value;
     var lastName = document.getElementById("lastName").value;
     var genderEle = document.getElementsByName("gender");
-    var fullname = title+". "+name+" "+middleName+" "+lastName
+    var fullname = title+""+name+""+middleName+""+lastName
+    var error = result(fullname)
+    if(error){ 
+        console.log("not working")
+        document.getElementById("error").innerHTML= error
 
+        return false
+    }
+    else{
+
+    }
+    console.log(error)
     for(i = 0; i < genderEle.length; i++) {
                 if(genderEle[i].checked)
                 {var gender = genderEle[i].value}
@@ -349,5 +361,26 @@ function deleteData(uid){
     document.getElementById(uid).remove(); 
 }
 
+
+
+
+
+function result(str){
+
+    let newStr = str.replace(/^\s+|\s+$/g, "").replace(/\s+/g, " ");
+    let condition = new RegExp("^[a-zA-Z ]*[']{0,1}[a-zA-Z ]*$");
+    if(str.match(/\d+/g) != null){
+        return "Name contains number !!!"
+    }
+    else if(newStr != str){
+        return "Name contains whitespace characters !!"
+    }
+    else if(!condition.test(str)){
+        return "Apostrophes occururing multiple times !!"
+    }
+    return false;
+}
+
+    
 </script>
 </html>
