@@ -107,11 +107,6 @@ particular technology in number of years, careerStartDate and save button.-->
         <td><input type="text" name="designation" id="designation" required></td>
     </tr>
     <tr>
-        <td><label for="tech">TechnologiesKnown:</label>
-            </td>
-        <td><input type="text" name="tech" id="tech" required></td>
-    </tr> 
-    <tr>
         <td><label for="startdate" >start Date:</label>
             </td>
         <td><input type="date" name="startDate" id="startDate" required></td>
@@ -120,13 +115,13 @@ particular technology in number of years, careerStartDate and save button.-->
         <td>TechnologiesKnown</td>
         <td><input type="checkbox" id="vue"  name="techcheckbox" value="vue">
             <label for="vue">Vue</label>
-            <input type="number" name="vue" step="0.1" value="0" id="expvue">Yr<br>
+            <input type="number" name="vue" min="0" step="0.1" value="0" id="expvue">Yr<br>
             <input type="checkbox" id="react" name="techcheckbox" value="react">
             <label for="react">React</label>
-            <input type="number" name="react"  step="0.1" value="0" id="expreact">Yr<br>
+            <input type="number" name="react" min="0" step="0.1" value="0" id="expreact">Yr<br>
             <input type="checkbox" id="angular" name="techcheckbox" value="angular">
             <label for="angular">Angular</label>
-            <input type="number" name="vue" value="0" step="0.1" id="expangular">Yr<br>
+            <input type="number" name="vue" value="0" min="0" step="0.1" id="expangular">Yr<br>
             
         </td>
     </tr>
@@ -136,64 +131,6 @@ particular technology in number of years, careerStartDate and save button.-->
     </tr>
     
    </table>
-  <!-- <div class="form-container">
-  <label for="title">Title:</label>
-  <select name="title" id="title"  required>
-    <option value="Mr">Mr</option>
-    <option value="Ms">Ms</option>
-    <option value="Mrs">Mrs</option>
-  </select><br>
-        <label for="name">Name:</label><br>
-        <div class="input-group">
-            
-            <input type="text" name="firstName" value="Rutvik" id="firstName" placeholder="Firstname" required>
-            <input type="text" name="middleName"  value="V" id="middleName" placeholder="Middlename">
-            <input type="text" name="lastName" value="Patel" id="lastName" placeholder="lastName" required>
-        </div>
-        <p>Gender:</p>
-        <div class="radio-group">
-            <input type="radio" name="gender" value="male" id="male" required>
-            <label for="male" selected>Male</label>
-            <input type="radio" name="gender" value="female" id="female" required>
-            <label for="female">Female</label><br>
-        </div>
-        <br>
-        <label for="email">Email ID:</label>
-        <input type="email" value="rutvik@gmail.com" name="email" id="email" required>
-        <br>
-        <label for="contactNo"> Contact No:</label>
-        <input type="tel" value="9099072492" name="contactNo" title="10 digit mobile no" id="contactNo" pattern="[1-9]{1}[0-9]{9}" maxlength="10" required>
-        <p>Permanent Address:-</p>
-        <div class="address">
-            <label for="houseNo">House No.:</label>
-            <input type="text" name="houseNo" id="houseNo" required><br>
-            <label for="addressLine1"> Address Line 1:</label>
-            <textarea type="tel" name="addressLine1" id="addressLine1" rows="1" cols="30" required></textarea>
-            <label for="addressLine2"> Address Line 2:</label>
-            <textarea type="tel" name="addressLine2" id="addressLine2" rows="1" cols="30"></textarea><br>
-            <label for="landmark">Landmark:</label>
-            <input type="text" name="landmark" id="landmark" required>
-            <label for="city">City:</label>
-            <input type="text" name="city" id="city" required><br>
-            <label for="state">State:</label>
-            <select name="state" id="state"  required></select>
-            <label for="country">Country:</label>
-            <select name="country" id="country" required>
-                <option value="India">India</option>
-            </select>
-            <label for="pincode">Pincode:</label>
-            <input type="text" name="pincode" id="pincode" required>
-        </div>
-        <label for="designation">Designation:</label>
-        <input type="text" name="designation" id="designation" required>
-        <label for="tech">TechnologiesKnown:</label>
-        <input type="text" name="tech" id="tech" required>
-         <label for="designation">Experience in Yr</label>
-        <input type="experience" name="experience" id="experience" required><br> 
-        <label for="startdate" >start Date:</label>
-        <input type="date" name="startDate" id="startDate" required> <br>
-        <button type="submit">Submit Data</button>
-    </div> -->
 </form>
 
 <table class="deatils" id="dataTable2">
